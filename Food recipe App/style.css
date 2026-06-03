@@ -1,0 +1,38 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #312e81);
+  color: white;
+}
+
+
+input{
+  width: 25rem;
+  background-color: #7160bd81;
+  color: antiquewhite;
+  padding: 4px;
+  border-radius: 10px;
+
+}
+input::placeholder{
+  color:white;
+  padding: 10px;
+}
+input:focus{
+  outline: none;
+}
+button{
+  font-weight: bold !important;
+}
+
+.img {
+  width: 220px;
+  border-radius: 10px;
+  border: 2px solid blanchedalmond;
+}
+.food {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
