@@ -1,8 +1,8 @@
 let food = document.querySelector(".food");
 
-let indian = document.querySelector("#indian");
+let Italy = document.querySelector("#indian");
 let Canadian = document.querySelector("#Canadian");
-let American = document.querySelector("#American");
+let Australian = document.querySelector("#American");
 let Thai = document.querySelector("#Thai");
 let British = document.querySelector("#British");
 let Russian = document.querySelector("#Russian");
