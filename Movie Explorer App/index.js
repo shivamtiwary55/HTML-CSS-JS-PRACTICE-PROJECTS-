@@ -28,9 +28,7 @@ const search = () => {
   let input = document.querySelector("#search");
 
   input.addEventListener("keydown", (e) => {
-
     if (e.key === "Enter") {
-
       let inputVal = input.value;
 
       fetchData(inputVal);
@@ -40,19 +38,14 @@ const search = () => {
 
 search();
 
-
-
-
-
-
 // Default movies load
 fetchData("Comedy");
 
-
 // Show movies on screen
 let showData = (films) => {
-  movies.innerHTML = films.map(
-    (films) => `<div class="movie-card">
+  movies.innerHTML = films
+    .map(
+      (films) => `<div class="movie-card">
   
   <img src ="https://image.tmdb.org/t/p/w500${films.poster_path}"
   class="movie-img"/>
@@ -67,12 +60,9 @@ let showData = (films) => {
         </p>
 
       </div>
-  
-  
-  
-  `
-)
-.join("");
+  `,
+    )
+    .join("");
 };
 
 Action.addEventListener("click", () => {
